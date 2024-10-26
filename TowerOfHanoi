@@ -1,0 +1,12 @@
+#include <stdio.h>
+void towerOfHanoi(int n, char frod, char torod, char xrod) {
+    if (n == 1) {
+        printf("Move disk 1 from rod %c to rod %c\n", frod, torod);
+        return;
+    }
+    towerOfHanoi(n - 1, frod, xrod, torod);
+    
+    printf("Move disk %d from rod %c to rod %c\n", n, frod, torod);
+    
+    towerOfHanoi(n - 1, xrod, torod, frod);
+}
