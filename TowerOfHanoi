@@ -10,3 +10,8 @@ void towerOfHanoi(int n, char frod, char torod, char xrod) {
     
     towerOfHanoi(n - 1, xrod, torod, frod);
 }
+int main() {
+    int n = 3; 
+    towerOfHanoi(n, 'A', 'C', 'B');
+    return 0;
+}
