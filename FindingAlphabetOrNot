@@ -1,0 +1,12 @@
+#include<stdio.h>
+int main() {
+    char str='e';
+    if((str>=97 && str<=122)||(str>=65 && str<=90))
+    {
+        printf("alph");
+    }
+    else
+    {
+        printf("not a alph");
+    }
+}
